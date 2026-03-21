@@ -1,0 +1,78 @@
+{
+  "uuid": "test-c2652953",
+  "title": "TXS0104EQPWRQ1",
+  "description": "Minimal C2652953 fixture for parent-name silkscreen testing",
+  "docType": 3,
+  "type": 3,
+  "szlcsc": { "id": 1, "number": "C2652953" },
+  "lcsc": {
+    "id": 1,
+    "number": "C2652953",
+    "url": "https://example.com/C2652953"
+  },
+  "owner": {
+    "uuid": "owner-1",
+    "username": "tester",
+    "nickname": "tester",
+    "avatar": "avatar"
+  },
+  "tags": [],
+  "updateTime": 0,
+  "updated_at": "2026-03-21T00:00:00.000Z",
+  "dataStr": {
+    "head": {
+      "docType": "3",
+      "editorVersion": "6.5.0",
+      "c_para": {
+        "Manufacturer Part": "TXS0104EQPWRQ1"
+      },
+      "x": 0,
+      "y": 0,
+      "uuid": "head-1",
+      "utime": 0,
+      "hasIdFlag": false
+    },
+    "canvas": "",
+    "shape": [],
+    "BBox": { "x": 0, "y": 0, "width": 1000, "height": 1000 },
+    "colors": {}
+  },
+  "verify": true,
+  "datastrid": "datastrid-1",
+  "writable": false,
+  "isFavorite": false,
+  "packageDetail": {
+    "uuid": "pkg-1",
+    "title": "TXS0104EQPWRQ1",
+    "docType": 4,
+    "updateTime": 0,
+    "owner": {
+      "uuid": "owner-1",
+      "username": "tester",
+      "nickname": "tester",
+      "avatar": "avatar"
+    },
+    "datastrid": "pkg-datastrid-1",
+    "writable": false,
+    "dataStr": {
+      "head": {
+        "docType": "4",
+        "editorVersion": "6.5.0",
+        "c_para": {},
+        "x": 0,
+        "y": 0,
+        "uuid": "pkg-head-1",
+        "utime": 0,
+        "hasIdFlag": false
+      },
+      "canvas": "",
+      "shape": [
+        "PAD~RECT~0~0~100~50~1~~1~0~-50 -25 50 -25 50 25 -50 25~0",
+        "TEXT~C~100~100~1~3~gge2~0~~Arial~{NAME}"
+      ],
+      "layers": [],
+      "objects": [],
+      "BBox": { "x": 0, "y": 0, "width": 1000, "height": 1000 }
+    }
+  }
+}
