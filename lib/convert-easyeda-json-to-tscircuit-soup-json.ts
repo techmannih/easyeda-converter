@@ -11,7 +11,6 @@ import type {
 } from "circuit-json"
 import {
   any_source_component,
-  pcb_courtyard_outline,
   pcb_hole,
   pcb_plated_hole,
   pcb_silkscreen_path,
@@ -602,22 +601,20 @@ export const convertEasyEdaJsonToCircuitJson = (
       const y1 = milx10(bbox.y) - margin
       const x2 = milx10(bbox.x + bbox.width) + margin
       const y2 = milx10(bbox.y + bbox.height) + margin
-      circuitElements.push(
-        pcb_courtyard_outline.parse({
-          type: "pcb_courtyard_outline",
-          pcb_courtyard_outline_id: `pcb_courtyard_outline_${easyEdaJson.lcsc.number}_1`,
-          pcb_component_id: "pcb_component_1",
-          layer: "top",
-          outline: [
-            { x: x1, y: y1 },
-            { x: x2, y: y1 },
-            { x: x2, y: y2 },
-            { x: x1, y: y2 },
-            { x: x1, y: y1 },
-          ],
-          stroke_width: strokeWidth,
-        }),
-      )
+      circuitElements.push({
+        type: "pcb_courtyard_outline",
+        pcb_courtyard_outline_id: `pcb_courtyard_outline_${easyEdaJson.lcsc.number}_1`,
+        pcb_component_id: "pcb_component_1",
+        layer: "top",
+        outline: [
+          { x: x1, y: y1 },
+          { x: x2, y: y1 },
+          { x: x2, y: y2 },
+          { x: x1, y: y2 },
+          { x: x1, y: y1 },
+        ],
+        stroke_width: strokeWidth,
+      } as any)
     }
   }
 
